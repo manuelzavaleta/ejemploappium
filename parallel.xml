@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" configfailurepolicy="continue" verbose="5" name="Parallel tests" data-provider-thread-count="1">
+    <test name="Nexus 5" preserve-order="true">
+        <parameter name="port_" value="4723" />
+        <packages>
+            <package name="tests.*"></package>
+        </packages>
+    </test>
+    <test name="Nexus 4" preserve-order="true">
+        <parameter name="port_" value="4725" />
+        <packages>
+            <package name="tests.*"></package>
+        </packages>
+    </test>
+</suite>
