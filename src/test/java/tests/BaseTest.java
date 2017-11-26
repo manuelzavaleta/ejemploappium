@@ -14,7 +14,7 @@ import java.net.URL;
 
 public class BaseTest {
 
-    protected AppiumDriver<MobileElement> driver;
+    public AppiumDriver<MobileElement> driver;
 
     @Parameters({"port_"})
     @BeforeMethod

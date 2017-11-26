@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="1" configfailurepolicy="continue" verbose="5" name="Single tests" data-provider-thread-count="1">
+    <listeners>
+        <listener class-name="listeners.ExtentReporter" />
+        <listener class-name="listeners.TestResultListenerAdapter" />
+    </listeners>
     <test name="Nexus 5" preserve-order="true">
         <parameter name="port_" value="4723" />
         <packages>

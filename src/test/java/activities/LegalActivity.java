@@ -15,12 +15,8 @@ public class LegalActivity extends BaseActivity {
         super(driver);
     }
 
-    public LegalActivity swipe(int startX, int startY, int endX, int endY) {
-        //Only for Appium 4 or older
-        //driver.swipe(startX, startY, endX, endY, duration);
-        TouchAction touchAction = new TouchAction(driver).press(startX, startY)
-                .moveTo(0, -40).release();
-        driver.performTouchAction(touchAction);
+    public LegalActivity swipeDown() {
+        swipe(400, 450, 0, -40);
         return this;
     }
 

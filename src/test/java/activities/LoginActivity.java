@@ -17,8 +17,8 @@ public class LoginActivity extends BaseActivity {
     }
 
     public AboutActivity clickAbout() throws InterruptedException {
-        overflow.click();
-        aboutLink.click();
+        click(overflow);
+        click(aboutLink);
         return new AboutActivity(driver);
     }
 

@@ -3,17 +3,17 @@ package tests;
 import activities.LegalActivity;
 import activities.StartActivity;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
 
-    @Test
+    @Test(description = "Display legal notices")
     public void displayLegalNoticesTest() throws InterruptedException {
         StartActivity startActivity = new StartActivity(driver);
         LegalActivity legalActivity = startActivity.clickLogin()
-                .clickAbout().clickLegalNotices()
-                .swipe(400, 450, 0, -40);
-        Assert.assertEquals(legalActivity.getLegalNotices(), "");
+                .clickAbout().clickLegalNotices().swipeDown();
+        Assert.assertEquals(legalActivity.getLegalNotices(), "a");
     }
 
 }

@@ -14,7 +14,7 @@ public class StartActivity extends BaseActivity {
     }
 
     public LoginActivity clickLogin() {
-        loginButton.click();
+        click(loginButton);
         return new LoginActivity(driver);
     }
 

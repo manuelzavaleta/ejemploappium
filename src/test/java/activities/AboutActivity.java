@@ -17,7 +17,7 @@ public class AboutActivity extends BaseActivity {
 
         for (AndroidElement element : elements) {
             if (element.getText().equals("Legal notices")) {
-                element.click();
+                click(element);
                 break;
             }
         }
