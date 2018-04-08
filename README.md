@@ -19,7 +19,7 @@ https://www.google.com/url?q=https%3A%2F%2Fwww.apkmirror.com%2Fapk%2Ftwitter-inc
 
 mvn test -Dtest.type={single | parallel}
 
-#Useful commands:
+## Useful commands:
 
 ./adb devices -l
 ./uiautomatorviewer
