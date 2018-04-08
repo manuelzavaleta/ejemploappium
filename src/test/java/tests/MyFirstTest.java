@@ -29,4 +29,15 @@ public class MyFirstTest extends BaseTest {
                 .swipeDown();
         Assert.assertTrue(false);
     }
+
+    @Test(description = "Display legal notices PASSED")
+    public void displayLegalNoticesPASS2Test() throws InterruptedException {
+        StartActivity startActivity = new StartActivity(driver);
+        LegalActivity legalActivity = startActivity
+                .clickLogin()
+                .clickAbout()
+                .clickLegalNotices()
+                .swipeDown();
+        Assert.assertTrue(true);
+    }
 }
