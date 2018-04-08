@@ -24,7 +24,7 @@ mvn test -Dtest.type={single | parallel}
 ./adb devices -l
 ./uiautomatorviewer
 
-# Reference:
+## Reference:
 
 http://appium.io/
 https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu
