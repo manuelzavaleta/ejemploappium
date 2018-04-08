@@ -4,7 +4,7 @@
 
 * Java 8 JDK
 * Maven 3
-* Android Studio
+* Android Studio with AVD Manager
 * Appium
 
 ## Twitter APK:
@@ -19,6 +19,10 @@ https://www.google.com/url?q=https%3A%2F%2Fwww.apkmirror.com%2Fapk%2Ftwitter-inc
 
 mvn test -Dtest.type={single | parallel}
 
+## Results report
+
+/target/results.html
+
 ## Useful commands:
 
 ./adb devices -l
@@ -26,5 +30,7 @@ mvn test -Dtest.type={single | parallel}
 
 ## Reference:
 
-http://appium.io/
-https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu
+[Appium] (http://appium.io/)
+[Jenkins] (https://jenkins.io/)
+[Install Jenkins on Linux] (https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu)
+[Sonarqube] (https://www.sonarqube.org/)
