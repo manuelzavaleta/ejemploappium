@@ -16,7 +16,7 @@ public class MyFirstTest extends BaseTest {
                 .clickAbout()
                 .clickLegalNotices()
                 .swipeDown();
-        Assert.assertTurue(true, true);
+        Assert.assertTrue(true, true);
     }
 
     @Test(description = "Display legal notices PASSED")
@@ -27,6 +27,6 @@ public class MyFirstTest extends BaseTest {
                 .clickAbout()
                 .clickLegalNotices()
                 .swipeDown();
-        Assert.assertTurue(true, false);
+        Assert.assertTrue(true, false);
     }
 }
