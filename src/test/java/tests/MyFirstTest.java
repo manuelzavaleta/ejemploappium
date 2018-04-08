@@ -9,13 +9,24 @@ import org.testng.annotations.Test;
 public class MyFirstTest extends BaseTest {
 
     @Test(description = "Display legal notices PASSED")
-    public void displayLegalNoticesPASSEDTest() throws InterruptedException {
+    public void displayLegalNoticesPASSTest() throws InterruptedException {
         StartActivity startActivity = new StartActivity(driver);
         LegalActivity legalActivity = startActivity
                 .clickLogin()
                 .clickAbout()
                 .clickLegalNotices()
                 .swipeDown();
-        Assert.assertEquals(legalActivity.getLegalNotices(), "");
+        Assert.assertTurue(true, true);
+    }
+
+    @Test(description = "Display legal notices PASSED")
+    public void displayLegalNoticesFAILTest() throws InterruptedException {
+        StartActivity startActivity = new StartActivity(driver);
+        LegalActivity legalActivity = startActivity
+                .clickLogin()
+                .clickAbout()
+                .clickLegalNotices()
+                .swipeDown();
+        Assert.assertTurue(true, false);
     }
 }
