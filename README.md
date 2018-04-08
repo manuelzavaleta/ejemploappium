@@ -2,10 +2,10 @@
 
 ## Requirements:
 
-Java 8 JDK
-Maven 3
-Android Studio
-Appium
+* Java 8 JDK
+* Maven 3
+* Android Studio
+* Appium
 
 ## Twitter APK:
 
