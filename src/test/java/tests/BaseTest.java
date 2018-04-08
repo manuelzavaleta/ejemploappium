@@ -21,7 +21,7 @@ public class BaseTest {
     public void beforeMethod(String port) throws IOException {
         File classpathRoot = new File("/home/roberto");
         File appDir = new File(classpathRoot, "Desktop");
-        File app = new File(appDir.getCanonicalPath(), "twitter_7.21.apk");
+        File app = new File(appDir.getCanonicalPath(), "twitter.apk");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("clearSystemFiles", "true");
         capabilities.setCapability("deviceName","Android Emulator");
