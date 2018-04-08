@@ -22,6 +22,12 @@ public class BaseActivity {
         element.click();
     }
 
+    protected void sendKeys(AndroidElement element, String keys) {
+        Reporter.log("Sending keys to -> "
+                + ("".equals(element.getText()) ? element.getId() : element.getText()) + " : " + keys);
+        element.sendKeys("");
+    }
+
     public void swipe(int startX, int startY, int endX, int endY) {
         Reporter.log("Swiping: [" + startX + ", " + startY + "] [" + endX + ", " + endY + "]");
         TouchAction touchAction = new TouchAction(driver).press(startX, startY)
