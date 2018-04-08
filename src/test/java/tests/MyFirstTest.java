@@ -8,17 +8,6 @@ import org.testng.annotations.Test;
 
 public class MyFirstTest extends BaseTest {
 
-    @Test(description = "Display legal notices")
-    public void displayLegalNoticesTest() throws InterruptedException {
-        StartActivity startActivity = new StartActivity(driver);
-        LegalActivity legalActivity = startActivity
-                .clickLogin()
-                .clickAbout()
-                .clickLegalNotices()
-                .swipeDown();
-        Assert.assertEquals(legalActivity.getLegalNotices(), "a");
-    }
-
     @Test(description = "Display legal notices PASSED")
     public void displayLegalNoticesPASSEDTest() throws InterruptedException {
         StartActivity startActivity = new StartActivity(driver);
