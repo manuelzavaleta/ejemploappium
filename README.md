@@ -21,12 +21,12 @@ mvn test -Dtest.type={single | parallel}
 
 ## Results report
 
-/target/results.html
+target/results.html
 
 ## Useful commands:
 
-* ~/Android/Sdk/platform-tools/adb devices -l *List Android devices*
-* ~/Android/Sdk/tools/uiautomatorviewer *Open the Automation Viewer*
+* ~/Android/Sdk/platform-tools/adb devices -l *(List the Android devices)*
+* ~/Android/Sdk/tools/uiautomatorviewer *(Open the Automation Viewer)*
 
 ## Reference:
 
