@@ -30,7 +30,7 @@ mvn test -Dtest.type={single | parallel}
 
 ## Reference:
 
-[Appium] (http://appium.io/)
-[Jenkins] (https://jenkins.io/)
-[Install Jenkins on Linux] (https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu)
-[Sonarqube] (https://www.sonarqube.org/)
+* *Appium* http://appium.io/
+* *Jenkins* https://jenkins.io/
+* *Install Jenkins on Linux* https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu
+* *Sonarqube* https://www.sonarqube.org/
