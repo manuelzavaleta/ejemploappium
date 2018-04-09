@@ -12,6 +12,12 @@ public class LoginActivity extends BaseActivity {
     @AndroidFindBy(id = "com.twitter.android:id/overflow_item_title")
     private AndroidElement aboutLink;
 
+    @AndroidFindBy(id = "com.twitter.android:id/login_identifier")
+    private AndroidElement inputUsername;
+
+    @AndroidFindBy(id = "com.twitter.android:id/login_password")
+    private AndroidElement inputPassword;
+
     public LoginActivity(AppiumDriver driver) {
         super(driver);
     }
@@ -20,6 +26,12 @@ public class LoginActivity extends BaseActivity {
         click(overflow);
         click(aboutLink);
         return new AboutActivity(driver);
+    }
+
+    public  LoginActivity fillData(String username, String password) {
+        sendKeys(inputUsername, username);
+        sendKeys(inputPassword, password);
+        return this;
     }
 
 }

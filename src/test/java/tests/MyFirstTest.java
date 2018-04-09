@@ -13,6 +13,7 @@ public class MyFirstTest extends BaseTest {
         StartActivity startActivity = new StartActivity(driver);
         LegalActivity legalActivity = startActivity
                 .clickLogin()
+                .fillData("roberto", "topsecret")
                 .clickAbout()
                 .clickLegalNotices()
                 .swipeDown();

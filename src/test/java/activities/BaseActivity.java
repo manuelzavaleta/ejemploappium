@@ -25,7 +25,7 @@ public class BaseActivity {
     protected void sendKeys(AndroidElement element, String keys) {
         Reporter.log("Sending keys to -> "
                 + ("".equals(element.getText()) ? element.getId() : element.getText()) + " : " + keys);
-        element.sendKeys("");
+        element.sendKeys(keys);
     }
 
     public void swipe(int startX, int startY, int endX, int endY) {
