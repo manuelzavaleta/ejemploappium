@@ -21,7 +21,7 @@ mvn test -Dtest.type={single | parallel}
 
 ## Results report
 
-target/results.html
+target/surefire-reports/results.html
 
 ## Useful commands:
 
@@ -34,5 +34,6 @@ target/results.html
 * *Jenkins* https://jenkins.io/
 * *Install Jenkins on Linux* https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu
 * *Sonarqube* https://www.sonarqube.org/
+* *Extent Reports* http://extentreports.com/
 
 * APK Info
