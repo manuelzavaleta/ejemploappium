@@ -34,3 +34,5 @@ target/results.html
 * *Jenkins* https://jenkins.io/
 * *Install Jenkins on Linux* https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu
 * *Sonarqube* https://www.sonarqube.org/
+
+* APK Info
