@@ -28,7 +28,7 @@ public class LoginActivity extends BaseActivity {
         return new AboutActivity(driver);
     }
 
-    public  LoginActivity fillData(String username, String password) {
+    public LoginActivity fillData(String username, String password) {
         sendKeys(inputUsername, username);
         sendKeys(inputPassword, password);
         return this;

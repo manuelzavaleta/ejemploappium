@@ -23,7 +23,7 @@ public class BaseTest {
         File app = new File(classpathRoot.getCanonicalPath(), "twitter.apk");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("clearSystemFiles", "true");
-        capabilities.setCapability("deviceName","Android Emulator");
+        capabilities.setCapability("deviceName", "Android Emulator");
         capabilities.setCapability("app", app.getAbsolutePath());
         capabilities.setCapability("appPackage", "com.twitter.android");
         capabilities.setCapability("appActivity", ".StartActivity");

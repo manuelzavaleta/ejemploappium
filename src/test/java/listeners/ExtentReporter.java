@@ -25,6 +25,13 @@ public class ExtentReporter implements IReporter {
         this.extent = extent;
     }
 
+    public static String milisToTimestamp(long milis) {
+        String timestamp = (new Timestamp(milis)).toString();
+        String[] charsToReplace = new String[]{"-", ":", ".", " "};
+        String validTimestamp = StringUtils.replaceInvalidChars(timestamp, charsToReplace, "_");
+        return validTimestamp;
+    }
+
     @Override
     public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
                                String outputDirectory) {
@@ -45,7 +52,7 @@ public class ExtentReporter implements IReporter {
         extent.flush();
         try {
             extent.close();
-        } catch(Exception exception) {
+        } catch (Exception exception) {
             System.out.println("Skipping extent report because of: " + exception.getMessage());
         }
     }
@@ -96,13 +103,6 @@ public class ExtentReporter implements IReporter {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(millis);
         return calendar.getTime();
-    }
-
-    public static String milisToTimestamp(long milis) {
-        String timestamp = (new Timestamp(milis)).toString();
-        String[] charsToReplace = new String[] { "-", ":", ".", " " };
-        String validTimestamp = StringUtils.replaceInvalidChars(timestamp, charsToReplace, "_");
-        return validTimestamp;
     }
 
 }

@@ -53,7 +53,7 @@ public class TestResultListenerAdapter extends TestListenerAdapter {
 
     private void takeScreenshot(ITestResult tr) {
         try {
-            AppiumDriver<MobileElement> driver = ((BaseTest)tr.getMethod().getInstance()).driver;
+            AppiumDriver<MobileElement> driver = ((BaseTest) tr.getMethod().getInstance()).driver;
 
             if (driver instanceof AndroidDriver || driver instanceof IOSDriver) {
                 System.out.println("DEBUG: Taking screenshot...");
@@ -65,7 +65,7 @@ public class TestResultListenerAdapter extends TestListenerAdapter {
             } else {
                 System.out.println("DEBUG: Skipping screenshot.");
             }
-        } catch(Exception exception) {
+        } catch (Exception exception) {
             exception.printStackTrace();
         } finally {
             runAfterMethod(tr);
