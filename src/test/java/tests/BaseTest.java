@@ -19,9 +19,8 @@ public class BaseTest {
     @Parameters({"port_"})
     @BeforeMethod
     public void beforeMethod(String port) throws IOException {
-        File classpathRoot = new File("/home/roberto");
-        File appDir = new File(classpathRoot, "Desktop");
-        File app = new File(appDir.getCanonicalPath(), "twitter.apk");
+        File classpathRoot = new File("src/test/resources/");
+        File app = new File(classpathRoot.getCanonicalPath(), "twitter.apk");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("clearSystemFiles", "true");
         capabilities.setCapability("deviceName","Android Emulator");
