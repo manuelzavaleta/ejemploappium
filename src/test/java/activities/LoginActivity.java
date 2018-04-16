@@ -18,6 +18,12 @@ public class LoginActivity extends BaseActivity {
     @AndroidFindBy(id = "com.twitter.android:id/login_password")
     private AndroidElement inputPassword;
 
+    @AndroidFindBy(id = "com.twitter.android:id/login_login")
+    private AndroidElement loginButton;
+
+    @AndroidFindBy(id = "com.twitter.android:id/password_reset")
+    private AndroidElement passwordReset;
+
     public LoginActivity(AppiumDriver driver) {
         super(driver);
     }
@@ -34,4 +40,13 @@ public class LoginActivity extends BaseActivity {
         return this;
     }
 
+    public LoginActivity clickLoginExpectingFailure() {
+        click(loginButton);
+        return this;
+    }
+
+    public ChangePasswordActivity clickOnForgotPassword() {
+        click(passwordReset);
+        return new ChangePasswordActivity(driver);
+    }
 }
